@@ -1,5 +1,5 @@
-# NutriGood
-NutriGood merupakan project chatbot telegram dengan fitur: mendeteksi status gizi balita secara mandiri, tanya jawab seputar stunting, dan informasi gizi.
+# Pantau Stunting
+Pantau Stunting merupakan project chatbot telegram dengan fitur: mendeteksi status gizi balita secara mandiri, tanya jawab seputar stunting, dan informasi gizi.
 
 Langkah 
 1. Meminta API Telegram pada botfather.
