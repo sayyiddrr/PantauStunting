@@ -16,7 +16,8 @@ db_connection = mysql.connector.connect(
 )
 db_cursor = db_connection.cursor()
 
-model = joblib.load(open('decision_tree_model.h5', 'rb'))
+#Load Model Yang sudah dibuat 
+model = joblib.load(open('YOUR MODEL.h5', 'rb'))
 
 # start
 @bot.message_handler(commands=['start'])
