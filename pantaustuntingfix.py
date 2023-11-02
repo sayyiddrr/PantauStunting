@@ -22,7 +22,7 @@ model = joblib.load(open('decision_tree_model.h5', 'rb'))
 @bot.message_handler(commands=['start'])
 def mulai(message):
     chatid = message.chat.id
-    bot.send_message(chatid, 'Halo! Selamat datang di Nutri Good Bot')
+    bot.send_message(chatid, 'Halo! Selamat datang di Pantau Stunting Bot')
     kirim_menu(chatid)
 
 def kirim_menu(chat_id):
@@ -33,7 +33,7 @@ def kirim_menu(chat_id):
     item4 = types.KeyboardButton('/kembali')
     markup.add(item1, item2)
     markup.add(item3,item4)
-    bot.send_message(chat_id, 'Apakah ada yang dapat saya bantu dengan layanan fitur Nutri Good: \n /cek_status_gizi_balita \n /tanya_jawab_gizi_balita \n /informasi_gizi_balita \nJika tidak ada, Terima Kasih telah menggunakan Nutri Good. Semoga bot ini selalu membantu Ibu/Bapak dalam memantau gizi Balita 🙏🏻 ', reply_markup=markup)
+    bot.send_message(chat_id, 'Apakah ada yang dapat saya bantu dengan layanan fitur Pantau Stunting: \n /cek_status_gizi_balita \n /tanya_jawab_gizi_balita \n /informasi_gizi_balita \nJika tidak ada, Terima Kasih telah menggunakan Pantau Stunting. Semoga bot ini selalu membantu Ibu/Bapak dalam memantau gizi Balita 🙏🏻 ', reply_markup=markup)
 
 @bot.message_handler(commands=['kembali'])
 def kembali_ke_menu_utama(message):
@@ -744,7 +744,7 @@ def informasi_gizi_recursive(chat_id, image_paths, captions, index=0):
 @bot.message_handler(commands=['informasi_gizi_balita'])
 def informasi_gizi(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, 'Berikut Informasi gizi balita secara umum yang dapat Nutri Good sampaikan:')
+    bot.send_message(chat_id, 'Berikut Informasi gizi balita secara umum yang dapat Pantau Stunting sampaikan:')
 
     image_paths = ['assets/Masalah Gizi di Indonesia.png', 'assets/Sehatkan Balita.png', 'assets/PHBS.png']
     captions = [
